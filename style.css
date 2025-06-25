@@ -269,6 +269,40 @@ body {
         left: auto;
         top: auto;
     }
+    .ca-header {
+        padding: 8px 0 0 0;
+        position: static;
+        justify-content: center;
+    }
+    .ca-card {
+        padding: 18px 4px;
+        border-radius: 12px;
+        max-width: 100vw;
+    }
+    .ca-title {
+        font-size: 1.1rem;
+    }
+    .crypto-anim {
+        width: 44px;
+        height: 44px;
+        margin-bottom: 10px;
+    }
+    .ca-address {
+        font-size: 0.92rem;
+        padding: 8px 2px;
+    }
+    .copy-btn {
+        font-size: 0.92rem;
+        padding: 7px 12px;
+    }
+    .social-icon img {
+        width: 24px;
+        height: 24px;
+        padding: 2px;
+    }
+    .social-links {
+        gap: 8px;
+    }
 }
 @keyframes floating {
     0% { transform: translateY(0) scale(1); filter: brightness(1); }
