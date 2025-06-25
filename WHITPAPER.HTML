@@ -61,6 +61,23 @@
             border-radius: 18px;
             box-shadow: 0 4px 16px #43cea2;
         }
+        .solana-header {
+            position: fixed;
+            bottom: 18px;
+            right: 18px;
+            left: auto;
+            top: auto;
+            z-index: 100;
+        }
+        .solana-logo {
+            width: 48px;
+            height: 48px;
+            border-radius: 12px;
+            box-shadow: 0 2px 8px #43cea2, 0 2px 8px #ff6f61;
+            background: #fff;
+            padding: 4px;
+            animation: floating 2.5s ease-in-out infinite alternate;
+        }
         @media (max-width: 700px) {
             .whitepaper-container {
                 padding: 16px 2vw;
@@ -73,10 +90,29 @@
             .whitepaper-section h2 {
                 font-size: 1.1rem;
             }
+            .solana-logo {
+                width: 32px;
+                height: 32px;
+                border-radius: 8px;
+                padding: 2px;
+            }
+            .solana-header {
+                bottom: 6px;
+                right: 6px;
+                left: auto;
+                top: auto;
+            }
+        }
+        @keyframes floating {
+            0% { transform: translateY(0) scale(1); filter: brightness(1); }
+            100% { transform: translateY(-10px) scale(1.07); filter: brightness(1.15); }
         }
     </style>
 </head>
 <body>
+    <header class="solana-header">
+        <img src="image/solana.png" alt="Solana Logo" class="solana-logo">
+    </header>
     <div class="whitepaper-container">
         <img src="image/wip.png" alt="WAKIDUN Logo" class="whitepaper-img">
         <div class="whitepaper-title">WAKIDUN Whitepaper</div>

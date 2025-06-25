@@ -111,10 +111,23 @@
             transform: scale(1.15) rotate(-8deg);
             filter: drop-shadow(0 4px 16px #185a9d) drop-shadow(0 2px 8px #ff6f61);
         }
+        .solana-header {
+            position: absolute;
+            top: 24px;
+            left: 32px;
+            z-index: 30;
+        }
+        .solana-logo {
+            width: 120px;
+            height: auto;
+        }
     </style>
 </head>
 <!-- ini untuk update contract address dan social media -->
 <body>
+    <header class="solana-header">
+        <img src="image/solana.png" alt="Solana Logo" class="solana-logo">
+    </header>
     <header class="ca-header">
         <div class="social-links">
             <a href="https://twitter.com/wakidun" target="_blank" title="Twitter" class="social-icon">
