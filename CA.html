@@ -128,6 +128,36 @@
             padding: 4px;
             animation: floating 2.5s ease-in-out infinite alternate;
         }
+        .buy-bot-group {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+            margin: 18px 0 0 0;
+            align-items: center;
+        }
+        .buy-bot-btn {
+            display: inline-block;
+            padding: 12px 28px;
+            border-radius: 12px;
+            font-size: 1.08rem;
+            font-weight: bold;
+            color: #fff;
+            text-decoration: none;
+            box-shadow: 0 2px 8px #43cea2, 0 2px 8px #ff6f61;
+            background: linear-gradient(90deg, #43cea2, #185a9d);
+            transition: transform 0.2s, box-shadow 0.2s, background 0.2s;
+            margin-bottom: 0;
+        }
+        .buy-bot-btn.maestro {
+            background: linear-gradient(90deg, #ff6f61, #43cea2);
+        }
+        .buy-bot-btn.trojan {
+            background: linear-gradient(90deg, #185a9d, #ff6f61);
+        }
+        .buy-bot-btn:hover {
+            transform: scale(1.07);
+            box-shadow: 0 6px 24px #185a9d;
+        }
         @media (max-width: 700px) {
             .ca-header {
                 padding: 8px 0 0 0;
@@ -170,6 +200,14 @@
             .social-links {
                 gap: 8px;
             }
+            .buy-bot-btn {
+                font-size: 0.98rem;
+                padding: 10px 10vw;
+                border-radius: 8px;
+            }
+            .buy-bot-group {
+                gap: 8px;
+            }
         }
     </style>
 </head>
@@ -192,8 +230,12 @@
         <div class="ca-card">
             <img src="image/wip.png" alt="Crypto Animation" class="crypto-anim">
             <div class="ca-title">WAKIDUN Contract Address</div>
-            <div class="ca-address" id="caText">COMING SOON MEAOOOWWWW AUUU</div>
+            <div class="ca-address" id="caText">COMING SOON</div>
             <button class="copy-btn" onclick="copyCA()">Copy Address</button>
+            <div class="buy-bot-group">
+                <a href="https://t.me/maestro?start=r-undrdth" target="caText()" rel="noopener" class="buy-bot-btn maestro">Buy via Maestro Bot</a>
+                <a href="https://t.me/solana_trojanbot?start=r-undrdth" target="caText()" rel="noopener" class="buy-bot-btn trojan">Buy via Trojan Bot</a>
+            </div>
             <div class="copied-msg" id="copiedMsg">Copied!</div>
         </div>
     </div>
